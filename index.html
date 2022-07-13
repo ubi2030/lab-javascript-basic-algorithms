@@ -34,7 +34,14 @@ let hacker1Caps = hacker1.toUpperCase();
 console.log(hacker1Caps.charAt(0)+" "+hacker1Caps.charAt(1)+" "+hacker1Caps.charAt(2)+" "+hacker1Caps.charAt(3)+" "+hacker1Caps.charAt(4)+" "+hacker1Caps.charAt(5)+" "+hacker1Caps.charAt(6)+" "+hacker1Caps.charAt(7)+" "+hacker1Caps.charAt(8));
 
 console.log(hacker2[4]+hacker2[3]+hacker2[2]+hacker2[1]+hacker2[0]);
-// s
+
+if(hacker1.localeCompare(hacker2)===-1){
+    console.log(`The driver's name goes first.`);
+} else if(hacker1.localeCompare(hacker2)===1){
+    console.log(`Yo, the navigator goes first definitely.`);
+} else{
+    console.log(`What?! You both have the same name?`);
+}
 
     </script>
 </body>
